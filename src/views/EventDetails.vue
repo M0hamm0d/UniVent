@@ -1,12 +1,11 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import UniVents from '@/data/university_events.json'
 const route = useRoute()
 const event = ref(null)
-const allEvents = [
-  { id: 1, title: 'Tech Conference', fullDescription: 'Full details about tech conference' },
-  { id: 2, title: 'Art Fest', fullDescription: 'Full details about art festival' },
-]
+const allEvents = UniVents
+console.log(allEvents)
 
 onMounted(() => {
   const id = Number(route.params.id)
@@ -15,8 +14,8 @@ onMounted(() => {
 </script>
 <template>
   <div v-if="event">
-    <h1>{{ event.title }}</h1>
-    <p>{{ event.fullDescription }}</p>
+    <h1>{{ event.event_title }}</h1>
+    <p>{{ event.description }}</p>
   </div>
   <div v-else>
     <p>Loading...</p>

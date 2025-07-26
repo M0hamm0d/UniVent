@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import { RouterLink } from 'vue-router'
 import SearchIcon from '@/components/icons/SearchIcon.vue'
+import AppFooter from './components/AppFooter.vue'
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import SearchIcon from '@/components/icons/SearchIcon.vue'
     </div>
   </Header>
   <RouterView />
+  <AppFooter />
 </template>
 
 <style scoped>
@@ -47,6 +49,10 @@ import SearchIcon from '@/components/icons/SearchIcon.vue'
 a {
   color: black;
   text-decoration: none;
+}
+a:hover {
+  color: #0b99ff;
+  transition: 0.3s;
 }
 .router-link-active {
   color: #169eff;
