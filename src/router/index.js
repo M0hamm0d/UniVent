@@ -10,18 +10,38 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/explore',
-      name: 'explore',
+      path: '/discover',
+      name: 'discover',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ExploreView.vue'),
+      component: () => import('../views/DiscoverView.vue'),
     },
     {
-      path: '/explore/:id', // dynamic route
+      path: '/discover/:id',
       name: 'EventDetails',
       component: () => import('../views/EventDetails.vue'),
       props: true,
+    },
+    {
+      path: '/events',
+      name: 'MyEvents',
+      component: () => import('../views/MyEvents.vue'),
+    },
+    {
+      path: '/calender',
+      name: 'Calender',
+      component: () => import('../views/CalenderView.vue'),
+    },
+    {
+      path: '/support',
+      name: 'support',
+      component: () => import('../views/SupportView.vue'),
+    },
+    {
+      path: '/settings',
+      name: 'Settings',
+      component: () => import('../views/SettingView.vue'),
     },
   ],
 })

@@ -1,8 +1,6 @@
 <script setup>
-//import UniLogo from './icons/UniLogo.vue'
 import DateIcon from './icons/DateIcon.vue'
 import LocationIcon from './icons/LocationIcon.vue'
-import { RouterLink } from 'vue-router'
 defineProps({
   title: {
     type: String,
@@ -61,9 +59,7 @@ defineProps({
         </div>
       </div>
       <!-- `/event/${event.id}` -->
-      <RouterLink :to="`/discover/${id}`">
-        <button class="">View Details</button>
-      </RouterLink>
+      <button class="">Remove From My Event</button>
     </div>
   </div>
 </template>
@@ -129,7 +125,8 @@ button:hover {
   gap: 5px;
 }
 .card-content button {
-  background-color: #0b99ff;
+  background-color: red;
+  font-weight: bold;
   color: white;
   border: none;
   padding: 10px 0;

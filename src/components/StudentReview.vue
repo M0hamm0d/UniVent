@@ -12,7 +12,7 @@ defineProps({
     type: String,
     required: true,
   },
-  university: {
+  department: {
     type: String,
     required: true,
   },
@@ -25,7 +25,7 @@ defineProps({
       <div class="review">{{ review }}</div>
       <div class="about">
         <h5 class="name">{{ name }}</h5>
-        <p class="university">{{ university }}</p>
+        <p class="university">{{ department }}</p>
       </div>
     </div>
   </div>
@@ -39,6 +39,11 @@ defineProps({
   background-color: #f1f1f1;
   border-radius: 10px;
   padding: 15px;
+}
+.card:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .card img {
   display: flex;

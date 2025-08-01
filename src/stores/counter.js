@@ -10,3 +10,15 @@ export const useCounterStore = defineStore('counter', () => {
 
   return { count, doubleCount, increment }
 })
+
+export const modalStore = defineStore('modalStore', () => {
+  const editModal = ref(false)
+  const changePasswordModal = ref(false)
+  function setEditModal() {
+    editModal.value = !editModal.value
+  }
+  function setChangePasswordModal() {
+    changePasswordModal.value = !changePasswordModal.value
+  }
+  return { editModal, changePasswordModal, setEditModal, setChangePasswordModal }
+})
