@@ -120,6 +120,7 @@ a {
 }
 .container {
   font-family: Satoshi;
+  padding: 1rem 30px;
 }
 .hero-section {
   background-image: url(../../public/UnilorinGate.jpg);
@@ -129,6 +130,7 @@ a {
   background-size: cover;
   opacity: 0;
   animation: fadeIn 1.2s ease-in-out forwards;
+  border-radius: 5px;
 }
 .hero-text {
   width: 100%;
@@ -151,6 +153,7 @@ a {
   flex-direction: column;
   max-width: 1440px;
   margin: auto;
+  border-radius: 5px;
 }
 .hero-text div h1 {
   font-size: 50px;
@@ -182,7 +185,6 @@ a {
   color: #0b99ff;
 }
 .trending-events,
-.featured-university,
 .feedback {
   display: flex;
   flex-direction: column;

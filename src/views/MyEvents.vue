@@ -47,7 +47,7 @@ import NoEvent from '@/components/icons/NoEvent.vue'
   grid-template-columns: 1fr 1fr 1fr;
 }
 .empty-container {
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;

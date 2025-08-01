@@ -8,6 +8,7 @@ footer {
   color: #797979;
   font-family: Satoshi;
   padding: 30px 0;
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #c9c9c9;
+  /* border-top: 1px solid #f1f1f1; */
 }
 </style>

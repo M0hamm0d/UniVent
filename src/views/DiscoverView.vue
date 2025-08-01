@@ -45,16 +45,16 @@ const events = UniVents.slice(0, 10)
 </template>
 <style scoped>
 .wrapper {
-  margin: 50px 0 30px;
+  margin: 0 0 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   font-family: Satoshi;
 }
 .browse-category {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 20px 30px;
 }
 .browse-category h2 {
   margin: 0;
@@ -63,6 +63,9 @@ const events = UniVents.slice(0, 10)
 .all-event-section .events-filter {
   display: flex;
   gap: 10px;
+}
+.all-event-section {
+  padding: 20px 30px;
 }
 .browse-category > div button,
 .all-event-section .events-filter button {
@@ -77,7 +80,6 @@ const events = UniVents.slice(0, 10)
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  padding-right: 20px;
   margin-top: 25px;
 }
 </style>
